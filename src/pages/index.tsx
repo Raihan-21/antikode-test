@@ -6,6 +6,62 @@ import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const expertises = [
+  {
+    icon: "learning.svg",
+    text: "Applied Science & Imagination Centre",
+    img: "",
+  },
+  {
+    icon: "diagnostic.svg",
+    text: "Diagnostics and Assessments",
+    img: "",
+  },
+  {
+    icon: "transformation.svg",
+    text: "Human Resources & Organizational Transformation",
+    img: "",
+  },
+  {
+    icon: "klobility.svg",
+    text: "Klobility",
+    img: "",
+  },
+  {
+    icon: "executive.svg",
+    text: "Leadership Development",
+    img: "",
+  },
+  {
+    icon: "learning.svg",
+    text: "On-Demand Online Learning",
+    img: "",
+  },
+];
+
+const events = [
+  {
+    type: "PUBLIC WORKSHOP",
+    date: "25 Feb 2022",
+    title: "Zoompathy vs Zoom-fatigue: Managing Virtual Meeting Burnout",
+  },
+  {
+    type: "PUBLIC WORKSHOP",
+    date: "25 Feb 2022",
+    title: "Zoompathy vs Zoom-fatigue: Managing Virtual Meeting Burnout",
+  },
+  {
+    type: "PUBLIC WORKSHOP",
+    date: "25 Feb 2022",
+    title: "Zoompathy vs Zoom-fatigue: Managing Virtual Meeting Burnout",
+  },
+  {
+    type: "PUBLIC WORKSHOP",
+    date: "25 Feb 2022",
+    title: "Zoompathy vs Zoom-fatigue: Managing Virtual Meeting Burnout",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -85,6 +141,57 @@ export default function Home() {
             </div>
           </div>
           <div className={`position-absolute${styles.heroOverlay}`}></div>
+        </div>
+        <div className={`${styles.expertise}`}>
+          <h2>Expertise</h2>
+          <p>
+            "Organisations who will succeed in the long-run are those who are
+            open to new ideas, embrace innovations, instill compassion in every
+            act and decision, and consistent in advancing humanity through
+            sustainability." - Excerpts from 'Leaders of a New Planet' book.
+          </p>
+          <div className={styles.expertiseGrid}>
+            {expertises.length &&
+              expertises.map((expertise) => (
+                <div className={`p-4 position-relative ${styles.expertiseBox}`}>
+                  <Image
+                    src={expertise.icon}
+                    alt="icon"
+                    width={49}
+                    height={49}
+                    className="mb-3"
+                  />
+                  <p className="text-uppercase text-white fs-3">
+                    {expertise.text}
+                  </p>
+                  <Image
+                    src={"arrow.svg"}
+                    alt="arrow"
+                    width={40}
+                    height={40}
+                    className={styles.expertiseArrow}
+                  />
+                </div>
+              ))}
+          </div>
+        </div>
+        <div className={styles.events}>
+          <div className="d-flex justify-content-between align-items-center mb-4">
+            <h2>Upcoming Events</h2>
+            <div className="d-flex">
+              <p>View all</p>
+              <Image src={"arrow.svg"} alt="arrow" width={20} height={20} />
+            </div>
+          </div>
+          <div className="d-flex">
+            <Image
+              src={"/img-upcoming.png"}
+              alt="events"
+              width={481}
+              height={481}
+            />
+            <div></div>
+          </div>
         </div>
       </main>
     </>

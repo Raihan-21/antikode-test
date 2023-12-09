@@ -270,3 +270,28 @@
     background-color: rgba(black, 0.7);
   }
 }
+
+.expertise {
+  background-color: $gray;
+  padding: 5rem;
+  width: 100%;
+  .expertiseGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    .expertiseBox {
+      height: 380px;
+      background-color: $secondary;
+      cursor: pointer;
+      .expertiseArrow {
+        position: absolute;
+        bottom: 0;
+        right: 2rem;
+      }
+    }
+  }
+}
+.events {
+  padding: 5rem;
+  width: 100%;
+}
