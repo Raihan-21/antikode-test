@@ -271,7 +271,7 @@
   }
 }
 
-.expertise {
+.sectionExpertise {
   background-color: $gray;
   padding: 5rem;
   width: 100%;
@@ -291,7 +291,38 @@
     }
   }
 }
-.events {
+.sectionEvents {
   padding: 5rem;
   width: 100%;
+  .eventsContentContainer {
+    column-gap: 3rem;
+  }
+  .eventContent {
+    cursor: pointer;
+  }
+  .eventType {
+    color: $primary;
+  }
+  .eventDate {
+    color: rgba(black, 0.6);
+  }
+}
+.sectionLearnmore {
+  background-image: url("/img-bottom-section.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding: 5rem;
+  .sectionContent {
+    max-width: 478px;
+    height: min-content;
+  }
+  .learnmoreOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(black, 0.4) 40%, transparent);
+  }
 }

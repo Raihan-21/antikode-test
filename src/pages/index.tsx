@@ -46,19 +46,19 @@ const events = [
     title: "Zoompathy vs Zoom-fatigue: Managing Virtual Meeting Burnout",
   },
   {
-    type: "PUBLIC WORKSHOP",
+    type: "BUKA PINTU",
     date: "25 Feb 2022",
-    title: "Zoompathy vs Zoom-fatigue: Managing Virtual Meeting Burnout",
+    title: "Our New Solution To Hire The Right Person For Your Company",
   },
   {
-    type: "PUBLIC WORKSHOP",
+    type: "LIVE WEBINAR",
     date: "25 Feb 2022",
-    title: "Zoompathy vs Zoom-fatigue: Managing Virtual Meeting Burnout",
+    title: "DDI : Among Indonesia’s First Signatories of UN WEP",
   },
   {
-    type: "PUBLIC WORKSHOP",
+    type: "BUKA PINTU",
     date: "25 Feb 2022",
-    title: "Zoompathy vs Zoom-fatigue: Managing Virtual Meeting Burnout",
+    title: "Our New Solution To Hire The Right Person For Your Company",
   },
 ];
 
@@ -142,7 +142,7 @@ export default function Home() {
           </div>
           <div className={`position-absolute${styles.heroOverlay}`}></div>
         </div>
-        <div className={`${styles.expertise}`}>
+        <div className={`${styles.sectionExpertise}`}>
           <h2>Expertise</h2>
           <p>
             "Organisations who will succeed in the long-run are those who are
@@ -175,7 +175,7 @@ export default function Home() {
               ))}
           </div>
         </div>
-        <div className={styles.events}>
+        <div className={styles.sectionEvents}>
           <div className="d-flex justify-content-between align-items-center mb-4">
             <h2>Upcoming Events</h2>
             <div className="d-flex">
@@ -183,15 +183,53 @@ export default function Home() {
               <Image src={"arrow.svg"} alt="arrow" width={20} height={20} />
             </div>
           </div>
-          <div className="d-flex">
+          <div className={`d-flex ${styles.eventsContentContainer}`}>
             <Image
               src={"/img-upcoming.png"}
               alt="events"
               width={481}
               height={481}
             />
-            <div></div>
+            <div>
+              {events.length &&
+                events.map((event) => (
+                  <div className={`d-flex ${styles.eventContent}`}>
+                    <div>
+                      <p className={styles.eventType}>{event.type}</p>
+                      <p className={styles.eventDate}>{event.date}</p>
+                    </div>
+                    <div>
+                      <p className="fs-4">{event.title}</p>
+                    </div>
+                    <Image
+                      src={"arrow.svg"}
+                      alt="arrow"
+                      width={25}
+                      height={24}
+                    />
+                  </div>
+                ))}
+            </div>
           </div>
+        </div>
+        <div
+          className={`text-white d-flex align-items-center position-relative ${styles.sectionLearnmore}`}
+        >
+          <div className={`position-relative z-1 ${styles.sectionContent}`}>
+            <h2>Be a Part of Daya Dimensi Indonesia</h2>
+            <p>
+              Are you the resilient leaders we are searching for? Join Daya
+              Dimensi Indonesia to advance your leadership skill and generate
+              exceptional leaders across Indonesia at once.
+            </p>
+            <Link href={"/"} className="text-white">
+              <div className="d-flex align-items-center">
+                <p className="mb-0 me-">Learn more</p>
+                <Image src={"arrow.svg"} alt="arrow" width={24} height={24} />
+              </div>
+            </Link>
+          </div>
+          <div className={styles.learnmoreOverlay}></div>
         </div>
       </main>
     </>
