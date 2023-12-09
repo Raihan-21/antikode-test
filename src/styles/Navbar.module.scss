@@ -1,0 +1,26 @@
+@import "variables";
+
+.navbar {
+  box-sizing: border-box;
+  max-width: 100%;
+  .menuContainer {
+    column-gap: 2rem;
+  }
+  a {
+    color: rgba(white, 0.8);
+    &.activeMenu {
+      color: white;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        width: 6px;
+        height: 6px;
+        background-color: $primary;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+      }
+    }
+  }
+}

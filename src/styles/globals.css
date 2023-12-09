@@ -105,3 +105,9 @@ a {
     color-scheme: dark;
   }
 }
+a{
+  text-decoration: none !important;
+}
+.fs-12px{
+  font-size: 12px;
+}
