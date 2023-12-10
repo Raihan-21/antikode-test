@@ -1,0 +1,35 @@
+// .section--about {
+.about__container {
+  .section--hero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 100vh;
+    .content {
+      color: white;
+      background-color: $darkgray;
+      grid-column: 1/2;
+      padding: 15rem 3rem 3rem;
+      .content__container {
+        z-index: 1;
+      }
+      .vector {
+        // z-index: 1;
+      }
+      .bg__leftvector {
+        left: 0;
+        transform: translateX(-30%);
+      }
+      .bg__rightvector {
+        right: 0;
+        transform: translateX(-30%);
+      }
+    }
+    .background {
+      grid-column: 2/4;
+      background-image: url("/about-hero-bg.jpg");
+      background-size: cover;
+    }
+  }
+}
+//   .about
+// }

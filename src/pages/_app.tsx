@@ -1,5 +1,6 @@
 import Navbar from "@/components/molecules/Navbar";
 import "@/styles/globals.css";
+import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 
 import { ReactElement, ReactNode, useEffect } from "react";
