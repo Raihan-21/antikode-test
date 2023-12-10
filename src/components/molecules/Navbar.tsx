@@ -8,13 +8,17 @@ const Navbar = ({ textColor = "white" }: { textColor?: string }) => {
   const router = useRouter();
   return (
     <div
-      className={`mx-4 my-4 position-absolute top-0 start-0 end-0  d-flex justify-content-between align-items-center z-2 text-${textColor} ${styles.navbar}`}
+      className={`mx-4 my-4 position-absolute top-0 start-0 end-0  d-flex justify-content-between align-items-center z-2  ${
+        styles.navbar
+      } ${
+        textColor === "white" ? styles.navbarWhiteText : styles.navbarBlackText
+      }`}
     >
       <Image src={"/logo.png"} alt="logo" width={160} height={50} />
       <div className={`d-flex ${styles.menuContainer}`}>
         <Link
           href={"/"}
-          className={`position-relative ${
+          className={`position-relative ${styles.navbarMenu} ${
             router.pathname === "/" ? styles.activeMenu : ""
           }`}
         >
@@ -22,7 +26,7 @@ const Navbar = ({ textColor = "white" }: { textColor?: string }) => {
         </Link>
         <Link
           href={"/about"}
-          className={`position-relative ${
+          className={`position-relative ${styles.navbarMenu} ${
             router.pathname === "/about" ? styles.activeMenu : ""
           }`}
         >
@@ -30,7 +34,7 @@ const Navbar = ({ textColor = "white" }: { textColor?: string }) => {
         </Link>
         <Link
           href={"/"}
-          className={`position-relative ${
+          className={`position-relative ${styles.navbarMenu} ${
             router.pathname === "/expertise" ? styles.activeMenu : ""
           }`}
         >
@@ -38,7 +42,7 @@ const Navbar = ({ textColor = "white" }: { textColor?: string }) => {
         </Link>
         <Link
           href={"/"}
-          className={`position-relative ${
+          className={`position-relative ${styles.navbarMenu} ${
             router.pathname === "/asd" ? styles.activeMenu : ""
           }`}
         >
@@ -46,7 +50,7 @@ const Navbar = ({ textColor = "white" }: { textColor?: string }) => {
         </Link>
         <Link
           href={"/"}
-          className={`position-relative ${
+          className={`position-relative ${styles.navbarMenu} ${
             router.pathname === "/asd" ? styles.activeMenu : ""
           }`}
         >
@@ -54,7 +58,7 @@ const Navbar = ({ textColor = "white" }: { textColor?: string }) => {
         </Link>
         <Link
           href={"/"}
-          className={`position-relative ${
+          className={`position-relative ${styles.navbarMenu} ${
             router.pathname === "/das" ? styles.activeMenu : ""
           }`}
         >
@@ -62,7 +66,7 @@ const Navbar = ({ textColor = "white" }: { textColor?: string }) => {
         </Link>
         <Link
           href={"/"}
-          className={`position-relative ${
+          className={`position-relative ${styles.navbarMenu} ${
             router.pathname === "/as" ? styles.activeMenu : ""
           }`}
         >
@@ -70,7 +74,7 @@ const Navbar = ({ textColor = "white" }: { textColor?: string }) => {
         </Link>
         <Link
           href={"/"}
-          className={`position-relative ${
+          className={`position-relative ${styles.navbarMenu} ${
             router.pathname === "/da" ? styles.activeMenu : ""
           }`}
         >

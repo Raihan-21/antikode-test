@@ -152,8 +152,11 @@ export default function Home() {
           </p>
           <div className={styles.expertiseGrid}>
             {expertises.length &&
-              expertises.map((expertise) => (
-                <div className={`p-4 position-relative ${styles.expertiseBox}`}>
+              expertises.map((expertise, i) => (
+                <div
+                  className={`p-4 position-relative ${styles.expertiseBox}`}
+                  key={i}
+                >
                   <Image
                     src={expertise.icon}
                     alt="icon"
@@ -192,8 +195,8 @@ export default function Home() {
             />
             <div>
               {events.length &&
-                events.map((event) => (
-                  <div className={`d-flex ${styles.eventContent}`}>
+                events.map((event, i) => (
+                  <div className={`d-flex ${styles.eventContent}`} key={i}>
                     <div>
                       <p className={styles.eventType}>{event.type}</p>
                       <p className={styles.eventDate}>{event.date}</p>
