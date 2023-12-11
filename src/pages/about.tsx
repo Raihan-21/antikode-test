@@ -7,19 +7,28 @@ const About = () => {
     <div className="about__container">
       <div className="section--hero">
         <div className="content position-relative">
-          <div className="d-flex">
-            <p>Home</p>
-            <p>/</p>
-            <p>About</p>
-          </div>
-          <div className="content__container position-relative">
-            <h1>Force of Progress</h1>
-            <p>
-              Daya Dimensi Indonesia is a leadership consultant that supports
-              organisations develop and deliver strategic programmes such as
-              assessment centre, selection, learning, and personal &
-              organisational transformation.
-            </p>
+          <div className="d-flex flex-column justify-content-between">
+            <div className="d-flex breadcrumbs">
+              <p>Home</p>
+              <p>/</p>
+              <p className="active-link">About</p>
+            </div>
+            <div className="content__container position-relative">
+              <h1>Force of Progress</h1>
+              <p>
+                Daya Dimensi Indonesia is a leadership consultant that supports
+                organisations develop and deliver strategic programmes such as
+                assessment centre, selection, learning, and personal &
+                organisational transformation.
+              </p>
+              <Image
+                src={"/arrow.svg"}
+                alt="arrow"
+                width={20}
+                height={20}
+                className="tour-arrow"
+              />
+            </div>
           </div>
           <Image
             src={"shape-left.svg"}
@@ -41,19 +50,21 @@ const About = () => {
       <div className="section--second position-relative">
         <div className="graysection position-absolute top-0"></div>
         <div className="content__container">
-          <h2>Daya Dimensi In Numbers</h2>
-          <div className="d-flex justify-content-between">
-            <div>
-              <p className="number__heading mb-0">24+ Years</p>
-              <p>Experience</p>
-            </div>
-            <div>
-              <p className="number__heading mb-0">50.000+</p>
-              <p>Executive Clients</p>
-            </div>
-            <div>
-              <p className="number__heading mb-0">400+</p>
-              <p>Organization Clients</p>
+          <div className="uppersection">
+            <h2>Daya Dimensi In Numbers</h2>
+            <div className="d-flex justify-content-between">
+              <div>
+                <p className="number__heading mb-0">24+ Years</p>
+                <p>Experience</p>
+              </div>
+              <div>
+                <p className="number__heading mb-0">50.000+</p>
+                <p>Executive Clients</p>
+              </div>
+              <div>
+                <p className="number__heading mb-0">400+</p>
+                <p>Organization Clients</p>
+              </div>
             </div>
           </div>
           <div className="grid__container">
@@ -84,7 +95,7 @@ const About = () => {
         </div>
       </div>
       <div className="section--collaborate">
-        <h2>Reasons to Collaborate</h2>
+        <h2 className="mb-4">Reasons to Collaborate</h2>
         <div className="grid__container">
           <div>
             <div className="icon__container mb-3">

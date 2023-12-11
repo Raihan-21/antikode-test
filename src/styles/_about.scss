@@ -9,9 +9,20 @@
       color: white;
       background-color: $darkgray;
       grid-column: 1/2;
-      padding: 15rem 3rem 3rem;
+      padding: 6rem 3rem;
+      height: 100%;
+      .breadcrumbs {
+        column-gap: 0.5rem;
+        color: rgba(white, 0.8);
+        .active-link {
+          color: white;
+        }
+      }
       .content__container {
         z-index: 1;
+      }
+      .tour-arrow {
+        transform: rotateZ(90deg);
       }
       .vector {
         // z-index: 1;
@@ -38,6 +49,9 @@
       height: 560px;
       z-index: -1;
     }
+    .uppersection {
+      padding-bottom: 3rem;
+    }
     .content__container {
       padding: 5rem;
       .number__heading {
@@ -53,6 +67,7 @@
   }
   .section--collaborate {
     padding: 5rem;
+    background-color: $gray;
     .icon__container {
       background-color: $primary;
       width: 56px;
