@@ -124,6 +124,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className="section--clients"></div>
     </div>
   );
 };
