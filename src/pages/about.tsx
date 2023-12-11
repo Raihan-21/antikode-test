@@ -124,7 +124,60 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="section--clients"></div>
+      <div className="section--clients">
+        <h2 className="text-white">Our Clients</h2>
+        <div className="d-flex flex-wrap">
+          <Image
+            src={"/astrainternational.png"}
+            alt="astra"
+            width={174}
+            height={174}
+          />
+          <Image src={"/blibli.png"} alt="astra" width={174} height={174} />
+          <Image src={"/bri.png"} alt="astra" width={174} height={174} />
+          <Image src={"/ifg.png"} alt="astra" width={174} height={174} />
+          <Image src={"/kalbefarma.png"} alt="astra" width={174} height={174} />
+          <Image src={"/kemdikbud.png"} alt="astra" width={174} height={174} />
+          <Image src={"/mandiri.png"} alt="astra" width={174} height={174} />
+          <Image src={"/mindid.png"} alt="astra" width={174} height={174} />
+          <Image src={"/pertamina.png"} alt="astra" width={174} height={174} />
+          <Image src={"/pln.png"} alt="astra" width={174} height={174} />
+        </div>
+      </div>
+      <div className="section--bottom position-relative">
+        <div className="content__container">
+          <div className="content">
+            <p className="fs-3 heading ">Family</p>
+            <div className="hidden">
+              <p>Introducing the DayaLima Family</p>
+              <div className="d-flex align-items-center">
+                <p className="mb-1 me-2">LEARN MORE</p>
+                <Image src={"/arrow.svg"} alt="arrow" width={20} height={20} />
+              </div>
+            </div>
+          </div>
+          <div className="content">
+            <p className="fs-3 heading">Board of Management</p>
+            <div className="hidden">
+              <p>Introducing the DayaLima Family</p>
+              <div className="d-flex align-items-center">
+                <p className="mb-1 me-2">LEARN MORE</p>
+                <Image src={"/arrow.svg"} alt="arrow" width={20} height={20} />
+              </div>
+            </div>
+          </div>
+          <div className="content">
+            <p className="fs-3 heading">Partners</p>
+            <div className="hidden">
+              <p>Introducing the DayaLima Family</p>
+              <div className="d-flex align-items-center">
+                <p className="mb-1 me-2">LEARN MORE</p>
+                <Image src={"/arrow.svg"} alt="arrow" width={20} height={20} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

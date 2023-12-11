@@ -75,6 +75,46 @@
     background-color: black;
     padding: 5rem;
   }
+  .section--bottom {
+    background-image: url("/bg-bottom.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding: 5rem;
+    .content__container {
+      width: 100%;
+      position: absolute;
+      bottom: 5rem;
+      left: 0;
+      right: 0;
+      padding: 0 5rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+      color: white;
+      align-items: end;
+      .content {
+        border-bottom: 1px solid rgba(white, 0.4);
+        cursor: pointer;
+        padding-bottom: 1rem;
+        .heading {
+          color: rgba(white, 0.4);
+        }
+        .hidden {
+          height: 0;
+          overflow-y: hidden;
+        }
+        &:hover {
+          border-bottom: 1px solid white;
+          .heading {
+            color: white;
+          }
+          .hidden {
+            height: fit-content;
+          }
+        }
+      }
+    }
+  }
 }
 //   .about
 // }
