@@ -38,6 +38,92 @@ const About = () => {
         </div>
         <div className="background"></div>
       </div>
+      <div className="section--second position-relative">
+        <div className="graysection position-absolute top-0"></div>
+        <div className="content__container">
+          <h2>Daya Dimensi In Numbers</h2>
+          <div className="d-flex justify-content-between">
+            <div>
+              <p className="number__heading mb-0">24+ Years</p>
+              <p>Experience</p>
+            </div>
+            <div>
+              <p className="number__heading mb-0">50.000+</p>
+              <p>Executive Clients</p>
+            </div>
+            <div>
+              <p className="number__heading mb-0">400+</p>
+              <p>Organization Clients</p>
+            </div>
+          </div>
+          <div className="grid__container">
+            <div>
+              <img src={"/img-leaders.jpg"} className="w-full" />
+              <p className="fs-2">Leaders of a New Planet</p>
+              <p>
+                It is our intention is to generate leaders whose mission is to
+                advance humanity through fresh ideas, forefront skills, and
+                compassion for future generations. We call them Leaders of a New
+                Planet.
+              </p>
+            </div>
+            <div>
+              <img src={"/img-innovations.jpg"} className="w-full" />
+              <p className="fs-2">Continuous Innovations</p>
+              <p>
+                In working with clients, we curate and provide integrated
+                business and leadership solutions. Therefore, we strive to grow
+                our digital solutions to better cater your needs.
+              </p>
+              <div className="d-flex">
+                <p>Learn More</p>
+                <Image src={"arrow.svg"} alt="arrow" width={20} height={20} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="section--collaborate">
+        <h2>Reasons to Collaborate</h2>
+        <div className="grid__container">
+          <div>
+            <div className="icon__container mb-3">
+              <img src="icon-learning.svg" alt="" />
+            </div>
+            <div>
+              <p className="fs-3 mb-1">Ethical</p>
+              <p>
+                We maintain the confidentiality of our clients' data. We uphold
+                our integrity by practicing zero-tolerance policy for bribery.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="icon__container mb-3">
+              <img src="icon-star.svg" alt="" />
+            </div>
+            <div>
+              <p className="fs-3 mb-1">Reliable</p>
+              <p>
+                We strive to provide solutions that are supported by data and
+                technology.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="icon__container mb-3">
+              <img src="icon-hand.svg" alt="" />
+            </div>
+            <div>
+              <p className="fs-3 mb-1">Agile</p>
+              <p>
+                We listen to our clients deliberately and deliver bespoke
+                solutions to achieve excellent outcome.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
