@@ -70,6 +70,7 @@ const carouselSettings = {
   arrows: true,
   dots: true,
   slidesToShow: 1,
+  dotsClass: "custom-dots",
 };
 
 const slides = [
@@ -105,8 +106,8 @@ export default function Home() {
         <div className={`position-relative ${styles.hero}`}>
           <div className={styles.heroHeadingContainer}>
             <div className={`px-4 text-white ${styles.heroHeadingContent}`}>
-              <h1>Adopt Globally, Adopt Locally</h1>
-              <p className="mb-4">
+              <h1 className="tstar-light">Adopt Globally, Adopt Locally</h1>
+              <p className="mb-4 text-fadewhite">
                 Daya Dimensi Indonesia is a world-class strategic partner for
                 individual and organisational transformation through
                 humanity-based and technology-supported solutions to help you
@@ -114,11 +115,11 @@ export default function Home() {
               </p>
               <div className={`d-flex ${styles.heroMore}`}>
                 <Link href={"/"} className="d-flex align-items-center">
-                  <p className="mb-0 me-2 text-white">Learn more about us</p>
+                  <p className="mb-0 me-2 text-white">LEARN MORE ABOUT US</p>
                   <Image src={"arrow.svg"} alt="arrow" width={20} height={20} />
                 </Link>
                 <Link href={"/"} className="d-flex align-items-center">
-                  <p className="mb-0 me-2 text-white">Contact us</p>
+                  <p className="mb-0 me-2 text-white">CONTACT US</p>
                   <Image src={"arrow.svg"} alt="arrow" width={20} height={20} />
                 </Link>
               </div>
@@ -280,15 +281,15 @@ export default function Home() {
           className={`text-white d-flex align-items-center position-relative ${styles.sectionLearnmore}`}
         >
           <div className={`position-relative z-1 ${styles.sectionContent}`}>
-            <h2>Be a Part of Daya Dimensi Indonesia</h2>
-            <p>
+            <h2 className="tstar-light">Be a Part of Daya Dimensi Indonesia</h2>
+            <p className="text-fadewhite">
               Are you the resilient leaders we are searching for? Join Daya
               Dimensi Indonesia to advance your leadership skill and generate
               exceptional leaders across Indonesia at once.
             </p>
             <Link href={"/"} className="text-white">
               <div className="d-flex align-items-center">
-                <p className="mb-0 me-">Learn more</p>
+                <p className="mb-0 me-2">LEARN MORE</p>
                 <Image src={"arrow.svg"} alt="arrow" width={24} height={24} />
               </div>
             </Link>

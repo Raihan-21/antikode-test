@@ -2,10 +2,25 @@
 @import "index";
 @import "about";
 @import "footer";
+html {
+  // letter-spacing: 0.2px;
+}
 .w-full {
   width: 100%;
 }
 
 .h-full {
   height: 100%;
+}
+.text-fadewhite {
+  color: rgba(white, 0.8);
+}
+.tstar-light {
+  font-weight: 300;
+}
+.custom-dots {
+  // width: 20px;
+  button {
+    display: none;
+  }
 }
