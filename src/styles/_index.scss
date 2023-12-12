@@ -1,0 +1,17 @@
+.section--slides {
+  .slides-bg {
+    background: $primary;
+    width: 80%;
+    top: -18%;
+    width: 180%;
+    right: 0;
+    // transform: translateY(-30%);
+  }
+  .slide__container {
+    column-gap: 2rem;
+    padding: 0 3rem;
+    .slide__content {
+      padding: 1rem 0;
+    }
+  }
+}

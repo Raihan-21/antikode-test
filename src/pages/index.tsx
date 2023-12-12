@@ -4,6 +4,10 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
 import Link from "next/link";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 const expertises = [
@@ -62,6 +66,32 @@ const events = [
   },
 ];
 
+const carouselSettings = {
+  arrows: true,
+  dots: true,
+  slidesToShow: 1,
+};
+
+const slides = [
+  {
+    logo: "/slide-logo.png",
+    img: "",
+    text: "Kolaborasi dalam Program Guru Penggerak sangat meaningful dan impactful untuk perkembangan pendidikan di Indonesia, sehingga perlu untuk dilakukan secara berkelanjutan.",
+    source: "Kementerian Pendidikan, Budaya, Riset, dan Teknologi",
+  },
+  {
+    logo: "/slide-logo.png",
+    img: "",
+    text: "Kolaborasi dalam Program Guru Penggerak sangat meaningful dan impactful untuk perkembangan pendidikan di Indonesia, sehingga perlu untuk dilakukan secara berkelanjutan.",
+    source: "Kementerian Pendidikan, Budaya, Riset, dan Teknologi",
+  },
+  {
+    logo: "/slide-logo.png",
+    img: "",
+    text: "Kolaborasi dalam Program Guru Penggerak sangat meaningful dan impactful untuk perkembangan pendidikan di Indonesia, sehingga perlu untuk dilakukan secara berkelanjutan.",
+    source: "Kementerian Pendidikan, Budaya, Riset, dan Teknologi",
+  },
+];
 export default function Home() {
   return (
     <>
@@ -176,6 +206,37 @@ export default function Home() {
                   />
                 </div>
               ))}
+          </div>
+        </div>
+        <div className="section--slides position-relative">
+          <div>
+            <Slider {...carouselSettings} className="position-relative z-1">
+              {slides.length &&
+                slides.map((slide) => (
+                  <div className="d-flex align-items-center slide__container">
+                    <Image
+                      src={"/slide-bg.jpg"}
+                      alt="background"
+                      width={584}
+                      height={438}
+                    />
+                    <div className="bg-black text-white slide__content d-flex flex-column justify-center h-full">
+                      <Image
+                        src={slide.logo}
+                        alt="logo"
+                        width={70}
+                        height={51}
+                        className="mb-2"
+                      />
+                      <p className="fs-4">{slide.text}</p>
+                      <p>{slide.source}</p>
+                    </div>
+                  </div>
+                ))}
+            </Slider>
+            <div className="slides-bg position-absolute">
+              <img src={"/slide-vector.svg"} alt="vector" />
+            </div>
           </div>
         </div>
         <div className={styles.sectionEvents}>

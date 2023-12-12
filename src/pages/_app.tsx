@@ -7,6 +7,7 @@ import { ReactElement, ReactNode, useEffect } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import WhiteNavbar from "@/components/templates/WhiteNavbar";
+import { Tstar } from "@/assets/fonts/Fonts";
 
 type NextPageWithLayout = {
   Layout?: (page: ReactElement) => ReactNode;
@@ -28,7 +29,11 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <>
       {/* <Navbar /> */}
-      {getLayout(<Component {...pageProps} />)}
+      {getLayout(
+        <main className={Tstar.className}>
+          <Component {...pageProps} />
+        </main>
+      )}
     </>
   );
 }
