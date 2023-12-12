@@ -7,7 +7,7 @@ const About = () => {
     <div className="about__container">
       <div className="section--hero">
         <div className="content position-relative">
-          <div className="d-flex flex-column justify-content-between">
+          <div className="d-flex flex-column justify-content-between h-full">
             <div className="d-flex breadcrumbs">
               <p>Home</p>
               <p>/</p>

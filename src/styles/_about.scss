@@ -29,11 +29,13 @@
       }
       .bg__leftvector {
         left: 0;
-        transform: translateX(-30%);
+        bottom: 30%;
+        transform: translate(-30%, 50%);
       }
       .bg__rightvector {
-        right: 0;
-        transform: translateX(-30%);
+        left: 20%;
+        bottom: 50%;
+        transform: translateY(50%);
       }
     }
     .background {
