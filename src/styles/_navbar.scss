@@ -1,0 +1,41 @@
+.navbar {
+  box-sizing: border-box;
+  max-width: 100%;
+  .menu__container {
+    column-gap: 2rem;
+  }
+  a {
+    &.active-menu {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        width: 6px;
+        height: 6px;
+        background-color: $primary;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+      }
+    }
+  }
+  &.navbar--whitetext {
+    .navbar__menu {
+      //   color: rgba(white, 0.2);
+    }
+    a {
+      color: rgba(white, 0.8);
+      & .active-menu {
+        color: white;
+      }
+    }
+  }
+  &.navbar--blacktext {
+    a {
+      color: rgba(black, 0.8);
+      & .active-menu {
+        color: black;
+      }
+    }
+  }
+}
