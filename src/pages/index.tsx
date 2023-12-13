@@ -70,7 +70,7 @@ const carouselSettings = {
   arrows: true,
   dots: true,
   slidesToShow: 1,
-  dotsClass: "custom-dots",
+  // dotsClass: "custom-dots",
 };
 
 const slides = [
@@ -103,9 +103,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={`position-relative ${styles.hero}`}>
-          <div className={styles.heroHeadingContainer}>
-            <div className={`px-4 text-white ${styles.heroHeadingContent}`}>
+        <div className={`position-relative section--hero`}>
+          <div className="section__heading-container">
+            <div className={`px-4 text-white heading__content`}>
               <h1 className="tstar-light">Adopt Globally, Adopt Locally</h1>
               <p className="mb-4 text-fadewhite">
                 Daya Dimensi Indonesia is a world-class strategic partner for
@@ -113,7 +113,7 @@ export default function Home() {
                 humanity-based and technology-supported solutions to help you
                 hire, promote, and develop exceptional leaders.
               </p>
-              <div className={`d-flex ${styles.heroMore}`}>
+              <div className={`d-flex more`}>
                 <Link href={"/"} className="d-flex align-items-center">
                   <p className="mb-0 me-2 text-white">LEARN MORE ABOUT US</p>
                   <Image src={"arrow.svg"} alt="arrow" width={20} height={20} />
@@ -126,37 +126,31 @@ export default function Home() {
             </div>
           </div>
           <div
-            className={`d-flex position-absolute align-items-center bottom-0 ${styles.heroSectionBottom}`}
+            className={`d-flex position-absolute align-items-center bottom-0 section--bottom`}
           >
             <div
-              className={`bg-white d-flex align-items-center ${styles.heroDiscoverContainer}`}
+              className={`bg-white d-flex align-items-center discover__container`}
             >
-              <div className={`me-4 d-flex ${styles.heroDiscoverBtn}`}>
+              <div className={`me-4 d-flex discover__btn}`}>
                 <p className="fs-12px">DISCOVER</p>
                 <Image src={"arrow.svg"} alt="arrow" width={20} height={20} />
               </div>
-              <div className={`d-flex ${styles.heroDiscoverContent}`}>
+              <div className={`d-flex discover__content`}>
                 <div>
-                  <p className={`fs-2 mb-0 ${styles.heroDiscoverHeading}`}>
-                    24+ Years
-                  </p>
+                  <p className={`fs-2 mb-0 discover__heading`}>24+ Years</p>
                   <p>Experience</p>
                 </div>
                 <div>
-                  <p className={`fs-2 mb-0 ${styles.heroDiscoverHeading}`}>
-                    50.000+
-                  </p>
+                  <p className={`fs-2 mb-0 discover__heading`}>50.000+</p>
                   <p>Executive Clients</p>
                 </div>
                 <div>
-                  <p className={`fs-2 mb-0 ${styles.heroDiscoverHeading}`}>
-                    400+
-                  </p>
+                  <p className={`fs-2 mb-0 discover__heading`}>400+</p>
                   <p>Organization Clients</p>
                 </div>
               </div>
             </div>
-            <div className={`d-flex ${styles.heroSectionBottomCertification}`}>
+            <div className={`d-flex certification`}>
               <Image
                 src={"/principles.png"}
                 alt="principles"
@@ -171,9 +165,9 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className={`position-absolute${styles.heroOverlay}`}></div>
+          <div className={`position-absolute overlay`}></div>
         </div>
-        <div className={`${styles.sectionExpertise}`}>
+        <div className="section--expertise">
           <h2>Expertise</h2>
           <p>
             "Organisations who will succeed in the long-run are those who are
@@ -181,13 +175,10 @@ export default function Home() {
             act and decision, and consistent in advancing humanity through
             sustainability." - Excerpts from 'Leaders of a New Planet' book.
           </p>
-          <div className={styles.expertiseGrid}>
+          <div className="expertise__grid">
             {expertises.length &&
               expertises.map((expertise, i) => (
-                <div
-                  className={`p-4 position-relative ${styles.expertiseBox}`}
-                  key={i}
-                >
+                <div className={`p-4 position-relative expertise__box`} key={i}>
                   <Image
                     src={expertise.icon}
                     alt="icon"
@@ -203,7 +194,7 @@ export default function Home() {
                     alt="arrow"
                     width={40}
                     height={40}
-                    className={styles.expertiseArrow}
+                    className="expertise__arrow"
                   />
                 </div>
               ))}
@@ -213,15 +204,18 @@ export default function Home() {
           <div>
             <Slider {...carouselSettings} className="position-relative z-1">
               {slides.length &&
-                slides.map((slide) => (
-                  <div className="d-flex align-items-center slide__container">
+                slides.map((slide, i) => (
+                  <div
+                    className="d-flex align-items-center slide__container"
+                    key={i}
+                  >
                     <Image
                       src={"/slide-bg.jpg"}
                       alt="background"
                       width={584}
                       height={438}
                     />
-                    <div className="bg-black text-white slide__content d-flex flex-column justify-center h-full">
+                    <div className=" text-white slide__content d-flex flex-column justify-center h-full">
                       <Image
                         src={slide.logo}
                         alt="logo"
@@ -240,7 +234,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={styles.sectionEvents}>
+        <div className="section--events">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <h2>Upcoming Events</h2>
             <div className="d-flex">
@@ -248,7 +242,7 @@ export default function Home() {
               <Image src={"arrow.svg"} alt="arrow" width={20} height={20} />
             </div>
           </div>
-          <div className={`d-flex ${styles.eventsContentContainer}`}>
+          <div className={`d-flex content__container`}>
             <Image
               src={"/img-upcoming.png"}
               alt="events"
@@ -260,14 +254,14 @@ export default function Home() {
                 events.map((event, i) => (
                   <div className={`d-flex ${styles.eventContent}`} key={i}>
                     <div>
-                      <p className={styles.eventType}>{event.type}</p>
-                      <p className={styles.eventDate}>{event.date}</p>
+                      <p className="event__type">{event.type}</p>
+                      <p className="event__date">{event.date}</p>
                     </div>
                     <div>
                       <p className="fs-4">{event.title}</p>
                     </div>
                     <Image
-                      src={"arrow.svg"}
+                      src={"icon-arrow-red.svg"}
                       alt="arrow"
                       width={25}
                       height={24}
@@ -278,9 +272,9 @@ export default function Home() {
           </div>
         </div>
         <div
-          className={`text-white d-flex align-items-center position-relative ${styles.sectionLearnmore}`}
+          className={`text-white d-flex align-items-center position-relative section--learnmore`}
         >
-          <div className={`position-relative z-1 ${styles.sectionContent}`}>
+          <div className={`position-relative z-1 content`}>
             <h2 className="tstar-light">Be a Part of Daya Dimensi Indonesia</h2>
             <p className="text-fadewhite">
               Are you the resilient leaders we are searching for? Join Daya
@@ -294,7 +288,7 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <div className={styles.learnmoreOverlay}></div>
+          <div className="overlay"></div>
         </div>
       </main>
     </>

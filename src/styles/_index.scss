@@ -1,3 +1,64 @@
+.section--hero {
+  background-image: url("/img-hero.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  .section__heading-container {
+    width: 100%;
+    padding: 10rem 5rem 5rem 5rem;
+    background: linear-gradient(rgba(black, 0.2) 80%, transparent);
+  }
+  .heroHeading {
+  }
+  .heading__content {
+    max-width: 477px;
+  }
+  .more {
+    column-gap: 2rem;
+  }
+  .discover__container {
+    padding: 2rem;
+  }
+  .discover__btn {
+    transform: rotateZ(90deg);
+  }
+  .discover__content {
+    column-gap: 4rem;
+    .discover__heading {
+      color: $primary;
+    }
+  }
+  .section--bottom {
+    column-gap: 3rem;
+    .certification {
+      height: 100%;
+      background: linear-gradient(transparent 80%, #6d7c8200 20%);
+    }
+  }
+  .overlay {
+    background-color: rgba(black, 0.7);
+  }
+}
+.section--expertise {
+  background-color: $gray;
+  padding: 5rem;
+  width: 100%;
+  .expertise__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    .expertise__box {
+      height: 380px;
+      background-color: $secondary;
+      cursor: pointer;
+      .expertise__arrow {
+        position: absolute;
+        bottom: 0;
+        right: 2rem;
+      }
+    }
+  }
+}
 .section--slides {
   .slides-bg {
     background: $primary;
@@ -13,5 +74,40 @@
     .slide__content {
       padding: 1rem 0;
     }
+  }
+}
+.section--events {
+  padding: 5rem;
+  width: 100%;
+  .content__container {
+    column-gap: 3rem;
+  }
+  .content {
+    cursor: pointer;
+  }
+  .event__type {
+    color: $primary;
+  }
+  .event__date {
+    color: rgba(black, 0.6);
+  }
+}
+.section--learnmore {
+  background-image: url("/img-bottom-section.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding: 5rem;
+  .content {
+    max-width: 478px;
+    height: min-content;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(black, 0.4) 40%, transparent);
   }
 }
