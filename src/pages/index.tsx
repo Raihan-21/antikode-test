@@ -179,16 +179,23 @@ export default function Home() {
             {expertises.length &&
               expertises.map((expertise, i) => (
                 <div className={`p-4 position-relative expertise__box`} key={i}>
-                  <Image
-                    src={expertise.icon}
-                    alt="icon"
-                    width={49}
-                    height={49}
-                    className="mb-3"
-                  />
-                  <p className="text-uppercase text-white fs-3">
-                    {expertise.text}
-                  </p>
+                  <div className="bg--red"></div>
+                  <div className="overlay"></div>
+                  <div className="bg--img">
+                    <img src="/expertise-img.jpg" alt="" className="" />
+                  </div>
+                  <div className="position-relative z-2">
+                    <Image
+                      src={expertise.icon}
+                      alt="icon"
+                      width={49}
+                      height={49}
+                      className="mb-3"
+                    />
+                    <p className="text-uppercase text-white fs-3">
+                      {expertise.text}
+                    </p>
+                  </div>{" "}
                   <Image
                     src={"arrow.svg"}
                     alt="arrow"
