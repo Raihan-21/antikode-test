@@ -237,27 +237,32 @@ export default function Home() {
         <div className="section--events">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <h2>Upcoming Events</h2>
-            <div className="d-flex">
-              <p>View all</p>
-              <Image src={"arrow.svg"} alt="arrow" width={20} height={20} />
+            <div className="d-flex align-items-center view-all__container">
+              <p className="view-all mb-0">View all</p>
+              <Image
+                src={"icon-arrow-red.svg"}
+                alt="arrow"
+                width={20}
+                height={20}
+              />
             </div>
           </div>
           <div className={`d-flex content__container`}>
             <Image
               src={"/img-upcoming.png"}
               alt="events"
-              width={481}
-              height={481}
+              width={381}
+              height={381}
             />
             <div>
               {events.length &&
                 events.map((event, i) => (
-                  <div className={`d-flex ${styles.eventContent}`} key={i}>
-                    <div>
+                  <div className={`content`} key={i}>
+                    <div className="event__category">
                       <p className="event__type">{event.type}</p>
                       <p className="event__date">{event.date}</p>
                     </div>
-                    <div>
+                    <div className="event__title">
                       <p className="fs-4">{event.title}</p>
                     </div>
                     <Image
@@ -265,6 +270,7 @@ export default function Home() {
                       alt="arrow"
                       width={25}
                       height={24}
+                      className="event__arrow"
                     />
                   </div>
                 ))}

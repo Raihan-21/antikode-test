@@ -82,8 +82,28 @@
   .content__container {
     column-gap: 3rem;
   }
+  .view-all__container {
+    column-gap: 2rem;
+    cursor: pointer;
+    .view-all {
+      color: $primary;
+    }
+  }
+
   .content {
     cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1rem;
+    .event__category {
+      grid-column: 1/1;
+    }
+    .event__title {
+      grid-column: 2/5;
+    }
+    .event__arrow {
+      grid-column: 5/6;
+    }
   }
   .event__type {
     color: $primary;
