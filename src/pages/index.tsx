@@ -209,26 +209,53 @@ export default function Home() {
         </div>
         <div className="section--slides position-relative">
           <div className="slide__content-container position-relative">
-            <img src="slide-bg.jpg" className="slide-img" />
             <div className="d-flex align-items-center slide__container">
-              <Image
+              {/* <Image
                 src={"/slide-bg.jpg"}
                 alt="background"
                 width={584}
                 height={438}
-              />
-              {/* <div className=" text-white slide__content d-flex flex-column justify-center h-full">
+              /> */}
+              <img src="slide-bg.jpg" className="slide-img" />
+              <div className=" text-white slide__content d-flex flex-column justify-center h-full">
                 <Image
-                  src={slide.logo}
+                  src="/slide-logo.png"
                   alt="logo"
                   width={70}
                   height={51}
                   className="mb-2"
                 />
                 <div className="pagination"></div>
-                <p className="fs-4">{slide.text}</p>
-                <p>{slide.source}</p>
-              </div> */}
+                <p className="fs-4">
+                  Kolaborasi dalam Program Guru Penggerak sangat meaningful dan
+                  impactful untuk perkembangan pendidikan di Indonesia, sehingga
+                  perlu untuk dilakukan secara berkelanjutan.
+                </p>
+                <p className="text-fadewhite">
+                  Kementerian Pendidikan, Budaya, Riset, dan Teknologi
+                </p>
+                <div className="d-flex align-items-center pagination__container">
+                  <div className="slide__pagination position-relative"></div>
+                  <div className="d-flex pagination-arrow__container">
+                    <div className="pagination__arrow">
+                      <Image
+                        src={"/icon-chevron.svg"}
+                        alt="chevron"
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="pagination__arrow pagination__arrow--right">
+                      <Image
+                        src={"/icon-chevron.svg"}
+                        alt="chevron"
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             {/* <Slider {...carouselSettings} className="position-relative z-1">
               {slides.length &&
