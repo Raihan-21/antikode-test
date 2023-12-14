@@ -86,6 +86,7 @@
         position: absolute;
         bottom: 0;
         right: 2rem;
+        z-index: 2;
       }
       &:hover {
         .bg--red {
@@ -101,15 +102,34 @@
     background: $primary;
     width: 80%;
     top: -18%;
-    width: 180%;
     right: 0;
+    // width: 180%;
+    // right: 0;
+
     // transform: translateY(-30%);
+  }
+  .slide-img {
+    max-width: 583px;
   }
   .slide__container {
     column-gap: 2rem;
     padding: 0 3rem;
     .slide__content {
       padding: 1rem 0;
+    }
+  }
+  .slide__content-container {
+    z-index: 1;
+  }
+  .pagination {
+    width: 100%;
+    position: relative;
+    background-color: rgba(white, 0.2);
+    &::before {
+      width: 20%;
+      top: 0;
+      left: 0;
+      background-color: white;
     }
   }
 }

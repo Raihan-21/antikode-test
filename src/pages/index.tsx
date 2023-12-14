@@ -208,8 +208,29 @@ export default function Home() {
           </div>
         </div>
         <div className="section--slides position-relative">
-          <div>
-            <Slider {...carouselSettings} className="position-relative z-1">
+          <div className="slide__content-container position-relative">
+            <img src="slide-bg.jpg" className="slide-img" />
+            <div className="d-flex align-items-center slide__container">
+              <Image
+                src={"/slide-bg.jpg"}
+                alt="background"
+                width={584}
+                height={438}
+              />
+              {/* <div className=" text-white slide__content d-flex flex-column justify-center h-full">
+                <Image
+                  src={slide.logo}
+                  alt="logo"
+                  width={70}
+                  height={51}
+                  className="mb-2"
+                />
+                <div className="pagination"></div>
+                <p className="fs-4">{slide.text}</p>
+                <p>{slide.source}</p>
+              </div> */}
+            </div>
+            {/* <Slider {...carouselSettings} className="position-relative z-1">
               {slides.length &&
                 slides.map((slide, i) => (
                   <div
@@ -230,22 +251,23 @@ export default function Home() {
                         height={51}
                         className="mb-2"
                       />
+                      <div className="pagination"></div>
                       <p className="fs-4">{slide.text}</p>
                       <p>{slide.source}</p>
                     </div>
                   </div>
                 ))}
-            </Slider>
-            <div className="slides-bg position-absolute">
-              <img src={"/slide-vector.svg"} alt="vector" />
-            </div>
+            </Slider> */}
+          </div>{" "}
+          <div className="slides-bg position-absolute">
+            <img src={"/slide-vector.svg"} alt="vector" />
           </div>
         </div>
         <div className="section--events">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <h2>Upcoming Events</h2>
             <div className="d-flex align-items-center view-all__container">
-              <p className="view-all mb-0">View all</p>
+              <p className="view-all mb-0">VIEW ALL</p>
               <Image
                 src={"icon-arrow-red.svg"}
                 alt="arrow"
