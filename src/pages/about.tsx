@@ -106,7 +106,7 @@ const About = () => {
             <div>
               <p className="fs-3 mb-1">Ethical</p>
               <p>
-                We maintain the confidentiality of our clients' data. We uphold
+                We maintain the confidentiality of our clients data. We uphold
                 our integrity by practicing zero-tolerance policy for bribery.
               </p>
             </div>
