@@ -98,6 +98,7 @@
   }
 }
 .section--slides {
+  margin-top: 10rem;
   .slides-bg {
     background: $primary;
     width: 80%;
@@ -165,7 +166,7 @@
   }
 }
 .section--events {
-  padding: 15rem 5rem 5rem;
+  padding: 10rem 5rem 5rem;
   width: 100%;
   .content__container {
     column-gap: 3rem;
