@@ -173,8 +173,8 @@ export default function Home() {
             &quot;Organisations who will succeed in the long-run are those who
             are open to new ideas, embrace innovations, instill compassion in
             every act and decision, and consistent in advancing humanity through
-            sustainability.&quot; - Excerpts from 'Leaders of a New Planet'
-            book.
+            sustainability.&quot; - Excerpts from &quot;Leaders of a New
+            Planet&quot; book.
           </p>
           <div className="expertise__grid">
             {expertises.length &&
