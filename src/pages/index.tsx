@@ -170,10 +170,11 @@ export default function Home() {
         <div className="section--expertise">
           <h2>Expertise</h2>
           <p>
-            "Organisations who will succeed in the long-run are those who are
-            open to new ideas, embrace innovations, instill compassion in every
-            act and decision, and consistent in advancing humanity through
-            sustainability." - Excerpts from 'Leaders of a New Planet' book.
+            &quot;Organisations who will succeed in the long-run are those who
+            are open to new ideas, embrace innovations, instill compassion in
+            every act and decision, and consistent in advancing humanity through
+            sustainability.&quot; - Excerpts from 'Leaders of a New Planet'
+            book.
           </p>
           <div className="expertise__grid">
             {expertises.length &&
