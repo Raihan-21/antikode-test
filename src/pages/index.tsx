@@ -218,7 +218,7 @@ export default function Home() {
               /> */}
               <img src="slide-bg.jpg" className="slide-img" />
               <div className=" text-white slide__content d-flex flex-column justify-center h-full">
-                <Image
+                <img
                   src="/slide-logo.png"
                   alt="logo"
                   width={70}
