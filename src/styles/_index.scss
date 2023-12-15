@@ -30,6 +30,7 @@
   }
   .section--bottom {
     column-gap: 3rem;
+    row-gap: 2rem;
     .certification {
       height: 100%;
       background: linear-gradient(transparent 80%, #6d7c8200 20%);
@@ -47,6 +48,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    @media screen and (max-width: 900px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .expertise__box {
       height: 380px;
       // background-color: $secondary;
@@ -115,6 +119,10 @@
   .slide__container {
     column-gap: 2rem;
     padding: 0 3rem;
+    @media screen and (max-width: 992px) {
+      background-color: $primary;
+      padding: 3rem;
+    }
     .slide__content {
       padding: 1rem 0;
     }
@@ -170,6 +178,7 @@
   width: 100%;
   .content__container {
     column-gap: 3rem;
+    row-gap: 2rem;
   }
   .view-all__container {
     column-gap: 2rem;

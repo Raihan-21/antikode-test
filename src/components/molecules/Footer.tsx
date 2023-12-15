@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer position-relative">
       <div className="section--top">
-        <div className="d-flex justify-content-between">
+        <div className="d-flex flex-wrap justify-content-between content__container">
           <div className="d-flex certification">
             <Image src={"/certified.png"} alt="image" width={35} height={60} />
             <Image

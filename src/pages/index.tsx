@@ -126,7 +126,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className={`d-flex position-absolute align-items-center bottom-0 section--bottom`}
+            className={`d-flex flex-column flex-lg-row position-absolute align-items-center bottom-0 section--bottom`}
           >
             <div
               className={`bg-white d-flex align-items-center discover__container`}
@@ -210,7 +210,7 @@ export default function Home() {
         </div>
         <div className="section--slides position-relative">
           <div className="slide__content-container position-relative">
-            <div className="d-flex align-items-center slide__container">
+            <div className="d-flex flex-column flex-lg-row align-items-center slide__container">
               {/* <Image
                 src={"/slide-bg.jpg"}
                 alt="background"
@@ -287,7 +287,7 @@ export default function Home() {
                 ))}
             </Slider> */}
           </div>{" "}
-          <div className="slides-bg position-absolute">
+          <div className="slides-bg position-absolute d-none d-lg-block">
             <img src={"/slide-vector.svg"} alt="vector" />
           </div>
         </div>
@@ -304,7 +304,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className={`d-flex content__container`}>
+          <div className={`d-flex flex-column flex-lg-row content__container`}>
             <Image
               src={"/img-upcoming.png"}
               alt="events"

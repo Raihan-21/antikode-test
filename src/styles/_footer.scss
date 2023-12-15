@@ -5,6 +5,9 @@
   .section--top {
     padding: 5rem;
     border-bottom: 1px solid white;
+    .content__container {
+      row-gap: 2rem;
+    }
   }
   .section--bottom {
     padding: 1rem 5rem;
