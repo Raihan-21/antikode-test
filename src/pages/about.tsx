@@ -47,14 +47,14 @@ const About = () => {
             className="position-absolute vector bg__rightvector"
           />
         </div>
-        <div className="background"></div>
+        <div className="background d-none d-lg-block"></div>
       </div>
       <div className="section--second position-relative" id="section--second">
         <div className="graysection position-absolute top-0"></div>
         <div className="content__container">
           <div className="uppersection">
             <h2>Daya Dimensi In Numbers</h2>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex flex-column flex-lg-row justify-content-between">
               <div>
                 <p className="number__heading mb-0">24+ Years</p>
                 <p>Experience</p>
@@ -99,7 +99,7 @@ const About = () => {
       <div className="section--collaborate">
         <h2 className="mb-4">Reasons to Collaborate</h2>
         <div className="grid__container">
-          <div>
+          <div className="grid__item">
             <div className="icon__container mb-3">
               <img src="icon-learning.svg" alt="" />
             </div>
@@ -111,11 +111,11 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="grid__item">
             <div className="icon__container mb-3">
               <img src="icon-star.svg" alt="" />
             </div>
-            <div>
+            <div className="w-full">
               <p className="fs-3 mb-1">Reliable</p>
               <p>
                 We strive to provide solutions that are supported by data and
@@ -123,7 +123,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="grid__item">
             <div className="icon__container mb-3">
               <img src="icon-hand.svg" alt="" />
             </div>

@@ -33,8 +33,14 @@
   &.navbar--blacktext {
     a {
       color: rgba(black, 0.8);
+      @media screen and (max-width: 992px) {
+        color: rgba(white, $alpha: 0.8);
+      }
       & .active-menu {
         color: black;
+        @media screen and (max-width: 992px) {
+          color: white;
+        }
       }
     }
   }

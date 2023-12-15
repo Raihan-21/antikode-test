@@ -5,12 +5,18 @@
   .section--top {
     padding: 5rem;
     border-bottom: 1px solid white;
+    @media screen and (max-width: 992px) {
+      padding: 2rem;
+    }
     .content__container {
       row-gap: 2rem;
     }
   }
   .section--bottom {
     padding: 1rem 5rem;
+    @media screen and (max-width: 992px) {
+      padding: 1rem 2rem;
+    }
   }
   .socmed {
     display: flex;

@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="footer position-relative">
       <div className="section--top">
         <div className="d-flex flex-wrap justify-content-between content__container">
-          <div className="d-flex certification">
+          <div className="d-flex flex-wrap certification">
             <Image src={"/certified.png"} alt="image" width={35} height={60} />
             <Image
               src={"/principles.png"}
@@ -58,7 +58,7 @@ const Footer = () => {
         <p>
           Copyright © 2022 Daya Dimensi Indonesia. Website crafted by Antikode.
         </p>
-        <div className="legal d-flex">
+        <div className="legal d-flex flex-wrap">
           <div>Privacy policy</div>
           <div>|</div>
           <div>Terms & conditions</div>

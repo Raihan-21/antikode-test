@@ -7,6 +7,9 @@
     width: 100%;
     padding: 10rem 5rem 5rem 5rem;
     background: linear-gradient(rgba(black, 0.2) 80%, transparent);
+    @media screen and (max-width: 992px) {
+      padding: 10rem 2rem 20rem 2rem;
+    }
   }
   .heroHeading {
   }
@@ -44,6 +47,9 @@
   background-color: $gray;
   padding: 5rem;
   width: 100%;
+  @media screen and (max-width: 992px) {
+    padding: 2rem;
+  }
   .expertise__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -176,9 +182,15 @@
 .section--events {
   padding: 10rem 5rem 5rem;
   width: 100%;
+  @media screen and (max-width: 992px) {
+    padding: 5rem 2rem;
+  }
   .content__container {
     column-gap: 3rem;
     row-gap: 2rem;
+    .image--upcoming {
+      max-width: 100%;
+    }
   }
   .view-all__container {
     column-gap: 2rem;
@@ -195,9 +207,15 @@
     column-gap: 1rem;
     .event__category {
       grid-column: 1/1;
+      @media screen and (max-width: 992px) {
+        grid-column: 1/6;
+      }
     }
     .event__title {
       grid-column: 2/5;
+      @media screen and (max-width: 992px) {
+        grid-column: 1/5;
+      }
     }
     .event__arrow {
       grid-column: 5/6;
@@ -216,6 +234,9 @@
   height: 100vh;
   width: 100%;
   padding: 5rem;
+  @media screen and (max-width: 992px) {
+    padding: 2rem;
+  }
   .content {
     max-width: 478px;
     height: min-content;

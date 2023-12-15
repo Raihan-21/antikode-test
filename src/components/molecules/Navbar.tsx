@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
-import styles from "@/styles/Navbar.module.scss";
 import Link from "next/link";
 
 const Navbar = ({ textColor = "white" }: { textColor?: string }) => {

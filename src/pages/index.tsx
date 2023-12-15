@@ -310,6 +310,7 @@ export default function Home() {
               alt="events"
               width={381}
               height={381}
+              className="image--upcoming"
             />
             <div>
               {events.length &&
