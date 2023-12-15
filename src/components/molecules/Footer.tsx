@@ -1,9 +1,12 @@
 import Image from "next/image";
-import React from "react";
+import React, { useCallback } from "react";
 
 const Footer = () => {
+  const scrollToTop = useCallback(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
-    <footer className="footer">
+    <footer className="footer position-relative">
       <div className="section--top">
         <div className="d-flex justify-content-between">
           <div className="d-flex certification">
@@ -60,6 +63,12 @@ const Footer = () => {
           <div>|</div>
           <div>Terms & conditions</div>
         </div>
+      </div>
+      <div
+        className="scroll-navigation d-flex justify-content-center align-items-center position-absolute"
+        onClick={scrollToTop}
+      >
+        <Image src={"/arrow.svg"} alt="arrow" width={20} height={20} />
       </div>
     </footer>
   );

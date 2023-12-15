@@ -34,4 +34,16 @@
   .legal {
     column-gap: 1rem;
   }
+  .scroll-navigation {
+    padding: 1rem;
+    border-radius: 50%;
+    top: 0;
+    right: 10%;
+    transform: translateY(-50%);
+    background-color: $primary;
+    cursor: pointer;
+    img {
+      transform: rotateZ(-90deg);
+    }
+  }
 }

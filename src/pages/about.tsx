@@ -21,13 +21,15 @@ const About = () => {
                 assessment centre, selection, learning, and personal &
                 organisational transformation.
               </p>
-              <Image
-                src={"/arrow.svg"}
-                alt="arrow"
-                width={20}
-                height={20}
-                className="tour-arrow"
-              />
+              <a href="#section--second">
+                <Image
+                  src={"/arrow.svg"}
+                  alt="arrow"
+                  width={20}
+                  height={20}
+                  className="tour-arrow"
+                />
+              </a>
             </div>
           </div>
           <Image
@@ -47,7 +49,7 @@ const About = () => {
         </div>
         <div className="background"></div>
       </div>
-      <div className="section--second position-relative">
+      <div className="section--second position-relative" id="section--second">
         <div className="graysection position-absolute top-0"></div>
         <div className="content__container">
           <div className="uppersection">
